@@ -6,8 +6,17 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="style.css">
 
+
+  <!-- swiper js-->
+  <link rel="stylesheet"  href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  
+
   <!-- Awesome icons -->
   <script src="https://kit.fontawesome.com/da02261ee7.js" crossorigin="anonymous"></script>
+  <script src="https://use.fontawesome.com/979023880d.js"></script>
+  
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+   
 
 
   <!-- font google -->
@@ -15,7 +24,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Sen&display=swap" rel="stylesheet">
 
-  <title>Pedro Menezes - fotografia</title>
+  <title>Pedro Menezes - Fotografia</title>
 </head>
 
 
@@ -23,75 +32,330 @@
 <body>
   <header>
 
-
+    
     <input id="menu-nav" type="checkbox">
+      <label for="menu-nav" id="menu-nav-label">
+      <i class="fas fa-bars"></i>
+      </label>
+      <label for="menu-nav" id="menu-nav-label-close">
+      <i class="fas fa-times"></i>
+      </label>
       <nav id="nav-mobile">
           <ul id="ul-mobile">
-            <li> <a href="#"> HOME</a></li>
-            <li><a href="#"> PORTIFÓLIO</a></li>
-            <li><a href="#"> SOBRE</a></li>
+            <li> <a href="index.html"> HOME</a></li>
+            <li><a href="ensaios.html"> ENSAIOS</a></li>
+            <li><a href="#about"> SOBRE</a></li>
+            <li><a href="#form-div"> CONTATO </a></li>
           </ul>
       </nav>
-    <label for="menu-nav" id="menu-nav-label">
-      <i class="fas fa-bars"></i>
-    </label>
+    
 
 
 
 
     <nav id="nav">
-      <div id="logo-div">
+      <div id="logo-div"> 
+        <a href="index.html">
         <img src="logo.png" id="logo-img" alt="logo">
+         </a>
       </div>
       <ul>
-        <li><a href="#">HOME</a></li>
-        <li><a href="#">PORTIFÓLIO</a></li>
-        <li><a href="#">SOBRE</a></li>
-        <li><a href="#">CONTATO</a></li>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="ensaios.html">ENSAIOS</a></li>
+        <li><a href="#about">SOBRE</a></li>
+        <li><a href="#form-div">CONTATO</a></li>
       </ul>
     </nav>
 
 
-    <div class="hero-content">
+    
 
-     <img id="slide" name="slide" src="" width="" height="" alt="">
-     <button type="button" id="btn-cta"> AGENDE SEU ENSAIO </button>
-     <a id="btn-zap"> <i class="fab fa-whatsapp"></i></a>
+    <div class="swiper">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide" data-swiper-parallax="400" style="background-image: url('pexels-asad-photo-maldives-2548558.jpg')">
+          <div class="swiper-slide" data-swiper-parallax="-3000" data-swiper-opacity="0">
+            <span class="slide-text" data-swiper-opacity="0">Suas lembranças eternizadas</span>
+            <button type="button" id="btn-cta"> <a href="#form-div" id="link-interno"> AGENDE SEU ENSAIO </a> </button>
+          </div>
+        </div>
+
+        <div class="swiper-slide" data-swiper-parallax="400" style="background-image: url('pexels-pham-hoang-kha-3347413.jpg')">
+          <div class="swiper-slide" data-swiper-parallax="-5000" data-swiper-opacity="0">
+            <span class="slide-text" data-swiper-opacity="0">Momentos especiais com pessoas especiais </span>
+            <button type="button" id="btn-cta"> <a href="#form-div" id="link-interno"> AGENDE SEU ENSAIO</a></button>
+          </div>
+        </div>
+
+        <div class="swiper-slide" data-swiper-parallax="400" style="background-image: url('pexels-helena-jankovičová-kováčová-6972345.jpg')">
+          <div class="swiper-slide" data-swiper-parallax="-3500" data-swiper-opacity="0">
+            <span class="slide-text" style="color: white">Guarde seus melhores momentos</span>
+            <button type="button" id="btn-cta"> <a href="#form-div" id="link-interno"> AGENDE SEU ENSAIO</a> </button>
+          </div>
+        </div>
+
+        <div class="swiper-slide" data-swiper-parallax="400" style="background-image: url('pexels-alberto-ramírez-sobrino-6877078.jpg')">
+          <div class="swiper-slide" data-swiper-parallax="-4500" data-swiper-opacity="0">
+            <span class="slide-text" style="color: white; width: 300px">Cada lembrança, uma nova história</span>
+            <button type="button" id="btn-cta"> <a href="#form-div" id="link-interno"> AGENDE SEU ENSAIO</a> </button>
+          </div>
+        </div>
+
+      </div>
+
+
+      <div class="swiper-pagination"></div>
+      
+        
+        <!-- <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div> -->
+      
+
+    </div>
+
+    <a href="https://web.whatsapp.com/send?phone=552199283924" target="_blank" id="btn-zap"> <i class="fab fa-whatsapp"></i></a>
+
+    <div class="social-media-btn">
+    <a href=""><i class="fab fa-facebook-square"></i></a>
+    <a href=""><i class="far fa-envelope"></i></a>
+    <a href=""><i class="fab fa-instagram-square"></i></a>
+
+    </div>
+
+  </header>
+
+  
+
+
+  <main>
+    <h1 class="main-title"> Ensaios selecionados </h1>
+    <div class="row">
+
+      <div class="column">
+
+        <div class="modal-box">
+          <img src="./fotos/aniversários/pexels-samaraagenstvo-feeria-2399097.jpg" id="img1" alt="Aniversário">
+          <div class="hover-btn">
+            <h1 class="hover-title"> Aniversário </h1>
+            <button class="btn-modal"> <a href="ensaios.html#aniversario" id="link-interno" > Veja mais fotos </a></button> 
+          </div>
+        </div>
+
+        <div class="modal-box">
+          <img src="./fotos/formatura/pexels-godisable-jacob-901965.jpg" alt="Formatura" id="img2">
+          <div class="hover-btn">
+            <h1 class="hover-title"> Formatura </h1>
+            <button class="btn-modal"> <a href="ensaios.html#formatura" id="link-interno"  > Veja mais fotos </a> </button> 
+          </div>
+        </div>
+
+        
+      </div>
+
+
+      <div class="column">
+
+        <div class="modal-box">
+          <img src="./fotos/casamento/pexels-pham-hoang-kha-3347413.jpg" alt="Casamento" id="img3">
+          <div class="hover-btn">
+            <h1 class="hover-title"> Casamento </h1>
+            <button class="btn-modal"> <a href="ensaios.html#casamento" id="link-interno" > Veja mais fotos </a> </button> 
+          </div>
+        </div>
+
+        <div class="modal-box">
+          <img src="./fotos/bebês/pexels-helena-jankovičová-kováčová-6972345.jpg" alt="Família" id="img4">
+          <div class="hover-btn">
+            <h1 class="hover-title"> Família </h1>
+            <button class="btn-modal"> <a href="ensaios.html#familia" id="link-interno" > Veja mais fotos </a> </button> 
+          </div>
+        </div>
+        
+
+      </div>
+
+      
+
 
     </div>
 
 
+      <div class="last-column">
+
+        <div class="modal-box last-modal">
+          <img src="./fotos_final/newborn/newborn-4.jpg" alt="Newborn" id="img5">
+          <div class="hover-btn">
+            <h1 class="hover-title"> Newborn </h1>
+            <button class="btn-modal"> <a href="ensaios.html#newborn" id="link-interno" > Veja mais fotos </a></button> 
+          </div>
+        </div>
+
+        <div class="modal-box last-modal">
+          <img src="./fotos_final/retrato corporativo/retrato-13.jpg" alt="Retrato Corporativo" id="img6">
+          <div class="hover-btn">
+            <h1 class="hover-title" style="text-align: center;"> Retrato Corporativo </h1>
+            <button class="btn-modal"> <a href="ensaios.html#retrato" id="link-interno" > Veja mais fotos </a> </button> 
+          </div>
+        </div>
 
 
 
-  </header>
 
-
-
-
-  <main>
-    <div class="row">
-      <div class="column">
-        <img src="./fotos/aniversários/pexels-samaraagenstvo-feeria-2399097.jpg" alt="">
-        <img src="./fotos/formatura/pexels-godisable-jacob-901965.jpg" alt="">
       </div>
 
-      <div class="column">
-        <img src="./fotos/casamento/pexels-pham-hoang-kha-3347413.jpg" alt="">
-        <img src="./fotos/bebês/pexels-helena-jankovičová-kováčová-6972345.jpg" alt="">
-      </div>
 
+
+
+
+    
+
+
+    
+
+    
+    <div id="myModal" class="modal">
+      <span class="close">&times;</span>
+      <div class="modal-content">
+        <img src="" alt="" id="modal-img">
+        
+        
+        
+      
+        <div id="caption"></div>
     </div>
 
   </main>
 
 
 
+<!-- Depoimentos -->
+
+<div class="swiper depoimentos">
+  <h2 id="depoimentos-title"> Depoimentos </h2>
+  <div class="swiper-wrapper">
+      <div class="swiper-slide" data-swiper-parallax="400">
+        <div id="depo-slide">
+          <div id="foto-cliente">
+            <img src="foto-casal.png" alt="foto-clientes">
+            <p> João & Maria </p>
+          </div>
+          <p id="depoimento-text">
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+            ex ea commodo consequat."
+          </p>
+        </div>
+      </div>
+  
+
+    <div class="swiper-slide" data-swiper-parallax="400">
+      <div id="depo-slide">
+        <div id="foto-cliente">
+          <img src="foto-casal2.png" alt="foto-clientes">
+          <p> Pedro & Luisa </p>
+        </div>
+        <p id="depoimento-text">
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+            ex ea commodo consequat."
+
+        </p>
+      </div>
+    </div>
+    
+    <div class="swiper-slide" data-swiper-parallax="400">
+      <div id="depo-slide">
+        <div id="foto-cliente">
+          <img src="foto-casal3.png" alt="foto-clientes">
+          <p> Roberto & Roberta </p>
+        </div>
+        <p  id="depoimento-text">
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+            ex ea commodo consequat."
+
+        </p>
+      </div>
+    </div>
 
 
-    <script type="text/javascript" src="index.js">
+    <div class="swiper-slide" data-swiper-parallax="400">
+      <div id="depo-slide">
+        <div id="foto-cliente">
+          <img src="foto-casal4.png" alt="foto-clientes">
+          <p> Matheus & Joana </p>
+        </div>
+        <p id="depoimento-text">
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+            ex ea commodo consequat."
 
-    </script>
+        </p>
+      </div>
+    </div>  
+  </div>
+  <div class="swiper-pagination depo"></div>
+           
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+        
+</div>
+<button id="btn-depoimentos"> Entre em contato </button>
 
+
+<!-- Sobre  -->
+
+
+<section class="about-me" id="about">
+    <h1> Prazer, Pedro Menezes! </h1>
+    
+    <div class="about-me-foto">
+      <img src="./foto-pedro.png" alt="">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+      </p>
+    </div>
+
+    <button> Agende seu ensaio </button>
+
+</section>
+
+
+<!-- Formulário de contato -->
+
+
+<section id="form-div">
+  <form action="" class="form">
+    <h1> Entre em contato </h1>
+    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+       Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </p>
+    <input type="text" placeholder="nome" id="input-name">
+    <input type="text" placeholder="telefone" id="input-telefone">
+    <input type="e-mail" placeholder="e-mail" id="input-email">
+    <textarea id="text-area" placeholder="mensagem"></textarea>
+    <button id="btn-form">Enviar</button>
+
+
+
+  </form>
+</section>
+
+
+
+<footer id="foot">
+  Developed and designed by Matheus Damião. All rights reserved.
+</footer>
+
+
+    
+
+
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"> </script>
+<script type="text/javascript" src="index.js"></script>
+    
 </body>
 </html>

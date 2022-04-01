@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+
+     <!-- swiper js-->
+  <link rel="stylesheet"  href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+     <!-- Awesome icons -->
+  <script src="https://kit.fontawesome.com/da02261ee7.js" crossorigin="anonymous"></script>
+  <script src="https://use.fontawesome.com/979023880d.js"></script>
+  
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+
+  <!-- font google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sen&display=swap" rel="stylesheet">
+
+  <title>Pedro Menezes - Ensaios </title>
+
+</head>
+<body style="width: 100%">
+    <header>
+    
+        <input id="menu-nav" type="checkbox">
+        <label for="menu-nav" id="menu-nav-label">
+        <i class="fas fa-bars"></i>
+        </label>
+        <label for="menu-nav" id="menu-nav-label-close">
+        <i class="fas fa-times"></i>
+        </label>
+        <nav id="nav-mobile">
+            <ul id="ul-mobile">
+              <li> <a href="index.html"> HOME</a></li>
+              <li><a href="ensaios.html"> ENSAIOS</a></li>
+              <li><a href="index.html#about"> SOBRE</a></li>
+              <li><a href="index.html#form-div"> CONTATO </a></li>
+            </ul>
+        </nav>
+
+
+
+    <nav id="nav">
+      <div id="logo-div">
+        <a href="index.html">
+         <img src="logo.png" id="logo-img" alt="logo">
+        </a>
+      </div>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="#ensaios">ENSAIOS</a></li>
+        <li><a href="index.html#about">SOBRE</a></li>
+        <li><a href="index.html#form-div">CONTATO</a></li>
+      </ul>
+    </nav>
+
+    <div class="ensaio-header" id="ensaios">
+        <h1 class="title-topo"> Ensaios </h1>
+        <p class="p-topo"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus earum quia harum amet consequatur deleniti nihil,
+            temporibus architecto est cum ex sequi doloribus sit dolorum veritatis vero, porro cumque deserunt!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis repudiandae optio ab, dicta minima saepe consequuntur labore temporibus rem. 
+            Mollitia commodi amet ullam dolorem illo dignissimos quas illum odit veritatis?</p>
+         
+    </div>
+
+    <a href="https://web.whatsapp.com/send?phone=552199283924" target="_blank" id="btn-zap"> <i class="fab fa-whatsapp"></i></a>
+
+    <div class="social-media-btn">
+    <a href=""><i class="fab fa-facebook-square"></i></a>
+    <a href=""><i class="far fa-envelope"></i></a>
+    <a href=""><i class="fab fa-instagram-square"></i></a>
+    </div>
+
+    </header>
+
+
+
+
+
+
+    <section class="ensaio aniversario" id="aniversario">
+        <div>
+            <h3 class="title-ensaio"> Aniversário</h3>
+            <p class="p-texto"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa, alias possimus perspiciatis molestiae 
+                explicabo enim illum quam laboriosam ipsum consequuntur minima error reprehenderit animi vel vero magni tempora?
+                Saepe velit eius aut ab molestias debitis maiores architecto quo provident similique?</p>
+        </div>
+
+        <div class="galeria">  
+            <div class="column-galeria">
+                <img src="./fotos_final/aniversário/aniversario-1.jpg" onclick="openModal(); currentSlide(1)">
+                <img src="./fotos_final/aniversário/aniversario-2.jpg" onclick="openModal(); currentSlide(2)">
+                <img src="./fotos_final/aniversário/aniversario-3.jpg" onclick="openModal(); currentSlide(3)">
+                <img src="./fotos_final/aniversário/aniversario-4.jpg" onclick="openModal(); currentSlide(4)">
+                <img src="./fotos_final/aniversário/aniversario-5.jpg" onclick="openModal(); currentSlide(5)">
+                <img src="./fotos_final/aniversário/aniversario-6.jpg" onclick="openModal(); currentSlide(6)">
+               
+            </div>
+            <div class="column-galeria">
+                <img src="./fotos_final/aniversário/aniversario-8.jpg" onclick="openModal(); currentSlide(8)">
+                <img src="./fotos_final/aniversário/aniversario-9.jpg" onclick="openModal(); currentSlide(9)">
+                <img src="./fotos_final/aniversário/aniversario-10.jpg" onclick="openModal(); currentSlide(10)">
+                <img src="./fotos_final/aniversário/aniversario-11.jpg" onclick="openModal(); currentSlide(11)">
+                <img src="./fotos_final/aniversário/aniversario-12.jpg" onclick="openModal(); currentSlide(12)">
+                <img src="./fotos_final/aniversário/aniversario-13.jpg" onclick="openModal(); currentSlide(13)">
+                <img src="./fotos_final/aniversário/aniversario-14.jpg" onclick="openModal(); currentSlide(14)">
+             </div>  
+        </div>
+    </section>
+
+         <div class="modal-galeria">
+            <span class="close-galeria" onclick="closemodal()">&times;</span>
+
+            <div class="modalContent">
+                
+                <div class="mySlides">
+                    <img src="./fotos_final/aniversário/aniversario-1.jpg" alt="" style="width: 100%;">
+               </div>
+
+                <div class="mySlides">
+                    <img src="./fotos_final/aniversário/aniversario-2.jpg" alt="" >
+                </div>
+
+                <div class="mySlides">
+                    <img src="./fotos_final/aniversário/aniversario-3.jpg" alt="" >
+                </div>
+
+                <div class="mySlides">
+                    <img src="./fotos_final/aniversário/aniversario-4.jpg" alt="" style="width: 100%">
+                </div>
+
+                <div class="mySlides">
+                    <img src="./fotos_final/aniversário/aniversario-5.jpg" alt="" style="width: 100%">   
+                </div>
+
+                <div class="mySlides">
+                    <img src="./fotos_final/aniversário/aniversario-6.jpg" alt="" style="width: 100%">
+                </div>
+
+                <div class="mySlides">
+                    <img src="./fotos_final/aniversário/aniversario-7.jpg" alt="" style="width: 100%">
+                </div>
+
+                <div class="mySlides">
+                    <img src="./fotos_final/aniversário/aniversario-8.jpg" alt="" style="width: 100%">
+                </div>
+
+                <div class="mySlides">
+                    <img src="./fotos_final/aniversário/aniversario-9.jpg" alt="" style="width: 100%">
+                </div>
+
+                <div class="mySlides">
+                    <img src="./fotos_final/aniversário/aniversario-10.jpg" alt="" style="width: 100%">
+                </div>
+
+                <div class="mySlides">
+                    <img src="./fotos_final/aniversário/aniversario-11.jpg" alt="" style="width: 100%">
+                </div>
+
+                <div class="mySlides">
+                    <img src="./fotos_final/aniversário/aniversario-12.jpg" alt="" style="width: 100%">
+                </div>
+
+                <div class="mySlides">
+                    <img src="./fotos_final/aniversário/aniversario-13.jpg" alt="" style="width: 100%">
+                </div>
+
+                <div class="mySlides">
+                    <img src="./fotos_final/aniversário/aniversario-14.jpg" alt="" style="width: 100%">
+                </div>
+
+                <i class="fas fa-angle-double-right" id="right-btn" onclick="plusSlides(1)"></i>
+                <i class="fas fa-angle-double-left" id="left-btn" onclick="plusSlides(-1)" > </i>
+             
+            </div>
+        </div>
+
+
+
+
+    <section class="ensaio casamento" id="casamento">
+        <div>
+            <h3 class="title-ensaio"> Casamento </h3>
+            <p class="p-texto"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa, alias possimus perspiciatis molestiae 
+                explicabo enim illum quam laboriosam ipsum consequuntur minima error reprehenderit animi vel vero magni tempora?
+                Saepe velit eius aut ab molestias debitis maiores architecto quo provident similique?</p>
+        </div>
+
+        <div class="galeria">
+            <div class="column-galeria">
+                <img src="./fotos_final/casamento/casamento-1.jpg" alt="" onclick="openModal()">
+                <img src="./fotos_final/casamento/casamento-2.jpg" alt="">
+                <img src="./fotos_final/casamento/casamento-3.jpg" alt="">
+                <img src="./fotos_final/casamento/casamento-4.jpg" alt="">
+                <img src="./fotos_final/casamento/casamento-5.jpg" alt="">
+                <img src="./fotos_final/casamento/casamento-6.jpg" alt="">
+                <img src="./fotos_final/casamento/casamento-7.jpg" alt="">
+            </div>
+            <div class="column-galeria">
+                <img src="./fotos_final/casamento/casamento-8.jpg" alt="">
+                <img src="./fotos_final/casamento/casamento-9.jpg" alt="">
+                <img src="./fotos_final/casamento/casamento-10.jpg" alt="">
+                <img src="./fotos_final/casamento/casamento-11.jpg" alt="">
+                <img src="./fotos_final/casamento/casamento-12.jpg" alt="">
+                <img src="./fotos_final/casamento/casamento-13.jpg" alt="">
+                <img src="./fotos_final/casamento/casamento-14.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+
+    <section class="ensaio familia" id="familia">
+        <div>
+            <h3 class="title-ensaio"> Família </h3>
+            <p class="p-texto"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa, alias possimus perspiciatis molestiae 
+                explicabo enim illum quam laboriosam ipsum consequuntur minima error reprehenderit animi vel vero magni tempora?
+                Saepe velit eius aut ab molestias debitis maiores architecto quo provident similique?</p>
+        </div>
+
+        <div class="galeria">
+            <div class="column-galeria">
+                <img src="./fotos_final/família/familia-1.jpg" alt="">
+                <img src="./fotos_final/família/familia-2.jpg" alt="">
+                <img src="./fotos_final/família/familia-3.jpg" alt="">
+                <img src="./fotos_final/família/familia-4.jpg" alt="">
+                <img src="./fotos_final/família/familia-5.jpg" alt="">
+                <img src="./fotos_final/família/familia-6.jpg" alt="">
+                <img src="./fotos_final/família/familia-7.jpg" alt="">
+            </div>
+            <div class="column-galeria">
+                <img src="./fotos_final/família/familia-8.jpg" alt="">
+                <img src="./fotos_final/família/familia-9.jpg" alt="">
+                <img src="./fotos_final/família/familia-10.jpg" alt="">
+                <img src="./fotos_final/família/familia-11.jpg" alt="">
+                <img src="./fotos_final/família/familia-12.jpg" alt="">
+                <img src="./fotos_final/família/familia-13.jpg" alt="">
+                <img src="./fotos_final/família/familia-14.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+
+    <section class="ensaio formatura" id="formatura">
+        <div>
+            <h3 class="title-ensaio"> Formatura </h3>
+            <p class="p-texto"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa, alias possimus perspiciatis molestiae 
+                explicabo enim illum quam laboriosam ipsum consequuntur minima error reprehenderit animi vel vero magni tempora?
+                Saepe velit eius aut ab molestias debitis maiores architecto quo provident similique?</p>
+        </div>
+
+        <div class="galeria">
+            <div class="column-galeria">
+                <img src="./fotos_final/formatura/formatura-1.jpg" alt="">
+                <img src="./fotos_final/formatura/formatura-2.jpg" alt="">
+                <img src="./fotos_final/formatura/formatura-3.jpg" alt="">
+                <img src="./fotos_final/formatura/formatura-4.jpg" alt="">
+                <img src="./fotos_final/formatura/formatura-5.jpg" alt="">
+                <img src="./fotos_final/formatura/formatura-6.jpg" alt="">
+                <img src="./fotos_final/formatura/formatura-7.jpg" alt="">
+            </div>
+            <div class="column-galeria">
+                <img src="./fotos_final/formatura/formatura-8.jpg" alt="">
+                <img src="./fotos_final/formatura/formatura-9.jpg" alt="">
+                <img src="./fotos_final/formatura/formatura-10.jpg" alt="">
+                <img src="./fotos_final/formatura/formatura-11.jpg" alt="">
+                <img src="./fotos_final/formatura/formatura-12.jpg" alt="">
+                <img src="./fotos_final/formatura/formatura-13.jpg" alt="">
+                <img src="./fotos_final/formatura/formatura-14.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="ensaio newborn" id="newborn">
+        <div>
+            <h3 class="title-ensaio"> Newborn </h3>
+            <p class="p-texto"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa, alias possimus perspiciatis molestiae 
+                explicabo enim illum quam laboriosam ipsum consequuntur minima error reprehenderit animi vel vero magni tempora?
+                Saepe velit eius aut ab molestias debitis maiores architecto quo provident similique?</p>
+        </div>
+
+        <div class="galeria">
+            <div class="column-galeria">
+                <img src="./fotos_final/newborn/newborn-1.jpg" alt="">
+                <img src="./fotos_final/newborn/newborn-2.jpg" alt="">
+                <img src="./fotos_final/newborn/newborn-3.jpg" alt="">
+                <img src="./fotos_final/newborn/newborn-4.jpg" alt="">
+                <img src="./fotos_final/newborn/newborn-5.jpg" alt="">
+                <img src="./fotos_final/newborn/newborn-6.jpg" alt="">
+                <img src="./fotos_final/newborn/newborn-7.jpg" alt="">
+            </div>
+            <div class="column-galeria">
+                <img src="./fotos_final/newborn/newborn-8.jpg" alt="">
+                <img src="./fotos_final/newborn/newborn-9.jpg" alt="">
+                <img src="./fotos_final/newborn/newborn-10.jpg" alt="">
+                <img src="./fotos_final/newborn/newborn-11.jpg" alt="">
+                <img src="./fotos_final/newborn/newborn-12.jpg" alt="">
+                <img src="./fotos_final/newborn/newborn-13.jpg" alt="">
+                <img src="./fotos_final/newborn/newborn-14.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+
+    <section class="ensaio retrato" id="retrato">
+        <div>
+            <h3 class="title-ensaio"> Retrato corporativo/profissional </h3>
+            <p class="p-texto"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa, alias possimus perspiciatis molestiae 
+                explicabo enim illum quam laboriosam ipsum consequuntur minima error reprehenderit animi vel vero magni tempora?
+                Saepe velit eius aut ab molestias debitis maiores architecto quo provident similique?</p>
+        </div>
+
+        <div class="galeria">
+            <div class="column-galeria">
+                <img src="./fotos_final/retrato corporativo/retrato-1.jpg" alt="">
+                <img src="./fotos_final/retrato corporativo/retrato-2.jpg" alt="">
+                <img src="./fotos_final/retrato corporativo/retrato-3.jpg" alt="">
+                <img src="./fotos_final/retrato corporativo/retrato-4.jpg" alt="">
+                <img src="./fotos_final/retrato corporativo/retrato-5.jpg" alt="">
+                <img src="./fotos_final/retrato corporativo/retrato-6.jpg" alt="">
+                <img src="./fotos_final/retrato corporativo/retrato-7.jpg" alt="">
+            </div>
+            <div class="column-galeria">
+                <img src="./fotos_final/retrato corporativo/retrato-8.jpg" alt="">
+                <img src="./fotos_final/retrato corporativo/retrato-9.jpg" alt="">
+                <img src="./fotos_final/retrato corporativo/retrato-10.jpg" alt="">
+                <img src="./fotos_final/retrato corporativo/retrato-11.jpg" alt="">
+                <img src="./fotos_final/retrato corporativo/retrato-12.jpg" alt="">
+                <img src="./fotos_final/retrato corporativo/retrato-13.jpg" alt="">
+                <img src="./fotos_final/retrato corporativo/retrato-14.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"> </script>   
+<script src="index.js"></script>  
+
+</body>
+</html>
