@@ -963,7 +963,7 @@ main {
 
 .ensaio-header {
   height: 600px;
-  width: 100vw;
+  /* width: 100vw; */
   min-width: 320px;
   background-image: url('./fotos_final/header-ensaio.jpg');
   background-position: cover;
