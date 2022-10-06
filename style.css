@@ -46,11 +46,12 @@ nav {
   transform: scale(1, 0);
   transform-origin: top;
   display: none;
-}
+ }
 
 #menu-nav:checked ~ #nav-mobile {
   position: fixed;
   display: flex;
+  
   transform: scale(1, 1);
  
 }
@@ -130,7 +131,8 @@ nav {
 }
 
 header {
-  max-width: 100vw;
+  /* max-width: 100vw; */
+  width: 100%;
   height: 100vh;
   
 }
@@ -357,7 +359,7 @@ main {
 .column img {
   width: 100%;
   vertical-align: middle;
-  margin: 5px;
+  /* margin: 5px; */
   cursor: pointer;
   transition: 0.3s all ease;
 }
@@ -372,7 +374,7 @@ main {
   width: 100%;
   flex-wrap: wrap;
   align-items: center;
-  margin: 5px;
+  /* margin: 5px; */
   
 }
 
